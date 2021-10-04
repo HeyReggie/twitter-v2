@@ -85,7 +85,6 @@ export default class Twitter {
         'Content-Type': 'application/json',
         Authorization: await this.credentials.authorizationHeader(urlString, {
           method: 'POST',
-          body: body,
         }),
       },
       body: JSON.stringify(body || {}),
